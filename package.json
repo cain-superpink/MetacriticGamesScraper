@@ -7,12 +7,11 @@
     "nodejs-scraper-v2": "bin/metacriticscraper.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "mcscrape": "node bin/metacriticscraper.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.10",
     "puppeteer": "^21.1.1",
     "stream": "^0.0.2"
   }

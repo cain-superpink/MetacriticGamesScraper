@@ -5,8 +5,7 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const { finished } = require('stream');
 const fullDetails = [];
-const inquirer = require("inquirer");
-const prompt = inquirer.createPromptModule()
+const numberOfPages = 3;
 
 
 
@@ -17,14 +16,7 @@ var site = 'https://www.metacritic.com/browse/games/score/metascore/all/all/filt
 
 
 async function run(){
-    await prompt([{
-        type: "input",
-        name: "PageNumberInput",
-        message: "Enter the number of pages to scrape (there are 100 games in each page, duplicate game titles are skipped)"
-        
-    }]).then((answers) => {
-        const numberOfPages = answers.PageNumberInput
-    })
+
         //launch browser and open new page
     const browser = await puppeteer.launch({headless: "new"});
     const page = await browser.newPage();
