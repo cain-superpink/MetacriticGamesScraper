@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-scraper-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "nodejs-scraper-v2": "bin/metacriticscraper.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^21.1.1",
+    "stream": "^0.0.2"
+  }
+}
